@@ -1,0 +1,195 @@
+/* Resetando margens e padding para um layout mais consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e tipografia do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente suave de laranja */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilização do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+    font-size: 1.8em;
+    color: #ffeb3b;
+    font-weight: 400;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Estilo da imagem */
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Frase inspiradora */
+p {
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: center;
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+
+/* Estilo das linhas horizontais */
+hr {
+    border: none;
+    height: 2px;
+    background: #ff7e5f; /* Cor do gradiente */
+    margin: 40px 0;
+}
+
+/* Container geral */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando a receita */
+.receita {
+    margin-bottom: 40px;
+}
+
+.receita ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.receita li {
+    font-size: 1.2em;
+    color: #333;
+    margin: 12px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+.receita li::before {
+    content: "🍪"; /* Ícone de cookie para cada item */
+    position: absolute;
+    left: -30px;
+    font-size: 1.5em;
+}
+
+/* Estilo do título da receita */
+h3 {
+    font-size: 2em;
+    color: #d2691e;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo do modo de preparo */
+.modo de preparo blockquote {
+    background: #f7f7f7;
+    border-left: 5px solid #ff7e5f;
+    padding: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Link para o vídeo */
+a {
+    font-size: 1.2em;
+    color: #d2691e;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Estilo das dicas */
+.dica {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dica q {
+    display: block;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #444;
+    background-color: #fff;
+    border-left: 5px solid #ff7e5f;
+    padding: 15px;
+    margin-top: 20px;
+    position: relative;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilo para responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 1.3em;
+    }
+
+    .receita li {
+        font-size: 1em;
+    }
+
+    .dica q {
+        font-size: 1.1em;
+    }
+
+    .modo de preparo blockquote {
+        font-size: 1em;
+    }
+}
+
